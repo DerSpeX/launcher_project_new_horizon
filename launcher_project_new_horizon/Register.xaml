@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:launcher_project_new_horizon"
         mc:Ignorable="d"
-        Title="Register" Height="450" Width="800" ShowInTaskbar="True"
+        Title="Register" Height="500" Width="900" ShowInTaskbar="True"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="RegisterWindow_OnMouseDown">
@@ -80,7 +80,7 @@
             <StackPanel VerticalAlignment="Bottom">
 
                 <Canvas Height="5" Background="#242424">
-                    <Line X1="0" Y1="0" X2="800" Y2="0" Stroke="#ecae60" StrokeThickness="4">
+                    <Line X1="0" Y1="0" X2="900" Y2="0" Stroke="#ecae60" StrokeThickness="4">
 
                     </Line>
                 </Canvas>
@@ -88,9 +88,9 @@
 
 
             <StackPanel Grid.Row="1" Margin="20,20" Orientation="Horizontal">
-                
-                
-                
+
+
+
                 <DockPanel Width="253" Height="285" HorizontalAlignment="Left">
                     <StackPanel>
                         <StackPanel Margin="0,30">
@@ -109,7 +109,7 @@
                                Height="30">
                             </TextBox>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -133,7 +133,7 @@
                                Height="30">
                             </TextBox>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -157,7 +157,7 @@
                                Height="30">
                             </TextBox>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -181,7 +181,7 @@
                                Height="30">
                             </TextBox>
                             <Border 
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -189,9 +189,17 @@
                         </StackPanel>
                     </StackPanel>
                 </DockPanel>
-                
-                
-                <DockPanel Width="253" Height="285" HorizontalAlignment="Center">
+
+
+                <DockPanel Width="253" Height="285" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                    <DockPanel.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="50"/>
+                        </TransformGroup>
+                    </DockPanel.RenderTransform>
                     <StackPanel>
                         <StackPanel Margin="0,30">
                             <TextBox x:Name="txtSurname"
@@ -209,7 +217,7 @@
                                Height="30">
                             </TextBox>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -233,7 +241,7 @@
                                Height="30">
                             </PasswordBox>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -257,7 +265,7 @@
                                Height="30">
                             </TextBox>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -281,7 +289,7 @@
                                Height="30">
                             </TextBox>
                             <Border 
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -290,8 +298,15 @@
                     </StackPanel>
                 </DockPanel>
 
-
-                <DockPanel Width="253" Height="285" HorizontalAlignment="Right">
+                <DockPanel Width="253" Height="285" RenderTransformOrigin="0.5,0.5">
+                    <DockPanel.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="100"/>
+                        </TransformGroup>
+                    </DockPanel.RenderTransform>
                     <StackPanel>
                         <StackPanel Margin="0,30">
                             <TextBox x:Name="txtSocialclubid"
@@ -306,10 +321,9 @@
                                BorderThickness="0"
                                Width="253"
                                Opacity="0.75"
-                               Height="30">
-                            </TextBox>
+                               Height="30"/>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -330,10 +344,9 @@
                                BorderThickness="0"
                                Width="253"
                                Opacity="0.75"
-                               Height="30">
-                            </TextBox>
+                               Height="30"/>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -354,10 +367,9 @@
                                BorderThickness="0"
                                Width="253"
                                Opacity="0.75"
-                               Height="30">
-                            </TextBox>
+                               Height="30"/>
                             <Border
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
@@ -378,10 +390,9 @@
                                BorderThickness="0"
                                Width="253"
                                Opacity="0.75"
-                               Height="30">
-                            </TextBox>
+                               Height="30"/>
                             <Border 
-                                Width="225"
+                                Width="250"
                                 Height="2"
                                 HorizontalAlignment="Left"
                                 Background="#ecae60"
