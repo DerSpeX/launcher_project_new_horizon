@@ -87,97 +87,312 @@
             </StackPanel>
 
 
-            <StackPanel Grid.Row="1" Margin="20,0,20,0">
-                <StackPanel Orientation="Horizontal" Margin="0,40,0,0">
-                    <TextBlock x:Name="txtForname"
-                                FontFamily="Helvetica"
-                                FontWeight="Regular"
-                                FontSize="20"
-                                Text="Vorname"
+            <StackPanel Grid.Row="1" Margin="20,20" Orientation="Horizontal">
+                
+                
+                
+                <DockPanel Width="253" Height="285" HorizontalAlignment="Left">
+                    <StackPanel>
+                        <StackPanel Margin="0,30">
+                            <TextBox x:Name="txtForname"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Vorname" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
                                 HorizontalAlignment="Left"
-                                
-                                Foreground="White"
-                                Background="Transparent"
-                                Opacity="0.75"
-                                Height="25" RenderTransformOrigin="0.5,0.5">
- 
-                    </TextBlock>
-                </StackPanel>
-                <Border Width="220"
-                        Height="2"
-                        Background="White"
-                        Opacity="0.75"   
-                        HorizontalAlignment="Left"/>
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
 
 
-                <StackPanel Orientation="Vertical" Margin="0,40,0,0">
-                    <TextBlock x:Name="txtUsername"
-                                FontFamily="Helvetica"
-                                FontWeight="Regular"
-                                FontSize="20"
-                                Text="Benutzname"
+                        <StackPanel>
+                            <TextBox x:Name="txtUsername"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Benutzername" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
                                 HorizontalAlignment="Left"
-                                Foreground="White"
-                                Background="Transparent"
-                                Opacity="0.75"
-                                Height="25"/>
-                </StackPanel>
-                <Border Width="220"
-                        Height="2"
-                        Background="White"
-                        Opacity="0.75"   
-                        HorizontalAlignment="Left"/>
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
 
 
-                <StackPanel Orientation="Vertical" Margin="0,40,0,0">
-                    <TextBlock x:Name="txtCharactername"
-                                FontFamily="Helvetica"
-                                FontWeight="Regular"
-                                FontSize="20"
-                                Text="Charaktername"
+                        <StackPanel Margin="0,30">
+                            <TextBox x:Name="txtCharactername"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Charaktername" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
                                 HorizontalAlignment="Left"
-                                Foreground="White"
-                                Background="Transparent"
-                                Opacity="0.75"
-                                Height="25"/>
-                </StackPanel>
-                <Border Width="220"
-                        Height="2"
-                        Background="White"
-                        Opacity="0.75"   
-                        HorizontalAlignment="Left"/>
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
 
 
-                <StackPanel Orientation="Vertical" Margin="0,40,0,0">
-                    <TextBlock x:Name="txtEmailAddress"
-                                FontFamily="Helvetica"
-                                FontWeight="Regular"
-                                FontSize="20"
-                                Text="E-Mail Adresse"
-                                TextAlignment="Left"
+                        <StackPanel>
+                            <TextBox x:Name="txtEmailAddress"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="E-Mail Adresse" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border 
+                                Width="225"
+                                Height="2"
                                 HorizontalAlignment="Left"
-                                Foreground="White"
-                                Background="Transparent"
-                                Opacity="0.75"
-                                Height="25"/>
-                </StackPanel>
-                <Border Width="220"
-                        Height="2"
-                        Background="White"
-                        Opacity="0.75"   
-                        HorizontalAlignment="Left"/>
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
+                
+                
+                <DockPanel Width="253" Height="285" HorizontalAlignment="Center">
+                    <StackPanel>
+                        <StackPanel Margin="0,30">
+                            <TextBox x:Name="txtSurname"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Nachname" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
 
 
+                        <StackPanel>
+                            <PasswordBox x:Name="txtPassword"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Password="Password" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </PasswordBox>
+                            <Border
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
 
 
+                        <StackPanel Margin="0,30">
+                            <TextBox x:Name="txtGender"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Geschlecht" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
 
 
+                        <StackPanel>
+                            <TextBox x:Name="txtBirthday"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Geburtsdatum" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border 
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
 
+
+                <DockPanel Width="253" Height="285" HorizontalAlignment="Right">
+                    <StackPanel>
+                        <StackPanel Margin="0,30">
+                            <TextBox x:Name="txtSocialclubid"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Social Club ID" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
+
+
+                        <StackPanel>
+                            <TextBox x:Name="txtSteamid64"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="SteamID64" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
+
+
+                        <StackPanel Margin="0,30">
+                            <TextBox x:Name="txtDiscordname"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Discord Name" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
+
+
+                        <StackPanel>
+                            <TextBox x:Name="txtTwitchname"
+                               FontFamily="Helvetica"
+                               FontWeight="Light"
+                               FontSize="23"
+                               Text="Kanal Twitch.tv" 
+                               HorizontalAlignment="Center"
+                               HorizontalContentAlignment="Left"
+                               Foreground="White"
+                               Background="Transparent"
+                               BorderThickness="0"
+                               Width="253"
+                               Opacity="0.75"
+                               Height="30">
+                            </TextBox>
+                            <Border 
+                                Width="225"
+                                Height="2"
+                                HorizontalAlignment="Left"
+                                Background="#ecae60"
+                                Opacity="0.75"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
 
             </StackPanel>
 
-
         </Grid>
-        
+
     </Grid>
 </Window>
