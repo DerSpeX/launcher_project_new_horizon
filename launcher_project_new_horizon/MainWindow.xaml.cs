@@ -70,11 +70,11 @@ namespace launcher_project_new_horizon
         {
             con.Open();
             com.Connection = con;
-            com.CommandText = "select Status from Users where username='" + username + "' and password='" + password + "'";
+            com.CommandText = "select ID from Users where username='" + username + "' and password='" + password + "'";
             dr = com.ExecuteReader();
             if (dr.Read())
             {
-                if (Convert.ToBoolean(dr["Status"]) == true)
+                if (Convert.ToBoolean(dr["ID"]) == true)
                 {
                     return true;
                 }

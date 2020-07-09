@@ -49,16 +49,14 @@ namespace launcher_project_new_horizon
             sp.Stop();
         }
 
-        private void btnRegister_Click(object sender, RoutedEventArgs e)
-        {
-            Register objRegister = new Register();
-            this.Visibility = Visibility.Hidden;
-            objRegister.Show();
-        }
-
         private void btnMusicPause_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

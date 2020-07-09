@@ -37,7 +37,7 @@
                 <TextBlock Text="Project:"
                            FontWeight="Bold"
                            FontFamily="ChopinScript Mittel"
-                           FontSize="35"
+                           FontSize="42"
                            Foreground="#ecae60"
                            HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
                     <TextBlock.RenderTransform>
@@ -45,7 +45,7 @@
                             <ScaleTransform/>
                             <SkewTransform AngleX="-3.5041414214731503E-15"/>
                             <RotateTransform/>
-                            <TranslateTransform X="-45" Y="15"/>
+                            <TranslateTransform X="-45" Y="4"/>
                         </TransformGroup>
                     </TextBlock.RenderTransform>
                     <TextBlock.Effect>
@@ -59,7 +59,7 @@
                 <TextBlock Text="New Horizon"
                            FontWeight="Bold"
                            FontFamily="ChopinScript Mittel"
-                           FontSize="35"
+                           FontSize="42"
                            Foreground="#ecae60"
                            HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
                     <TextBlock.RenderTransform>
@@ -67,7 +67,7 @@
                             <ScaleTransform/>
                             <SkewTransform AngleX="-3.5041414214731503E-15"/>
                             <RotateTransform/>
-                            <TranslateTransform Y="11.5" X="40"/>
+                            <TranslateTransform Y="14" X="55"/>
                         </TransformGroup>
                     </TextBlock.RenderTransform>
                     <TextBlock.Effect>
@@ -117,8 +117,8 @@
 
                 <StackPanel VerticalAlignment="Top" Margin="0,0">
 
-                    <Canvas>
-                        <Line X1="0" Y1="0" X2="900" Y2="0" Stroke="#ecae60" StrokeThickness="4" Canvas.Left="-15" Canvas.Top="10">
+                    <Canvas Height="5" Background="#242424">
+                        <Line X1="0" Y1="0" X2="900" Y2="0" Stroke="#ecae60" StrokeThickness="4" Canvas.Left="-20" Canvas.Top="10">
 
                         </Line>
                     </Canvas>
@@ -127,7 +127,7 @@
 
                 <StackPanel VerticalAlignment="Bottom" Margin="0,0">
 
-                    <Canvas>
+                    <Canvas Height="5" Background="#242424">
                         <Line X1="0" Y1="0" X2="900" Y2="0" Stroke="#ecae60" StrokeThickness="4" Canvas.Left="-20" Canvas.Top="10"/>
                     </Canvas>
                 </StackPanel>
@@ -447,13 +447,13 @@
 
             <Button x:Name="btnRegister"
                     Content="Registrieren"
-                    Height="40" Margin="755,7,10,328" Grid.Row="1" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontStyle="Normal" FontSize="16">
+                    Height="40" Margin="755,7,10,328" Grid.Row="1" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontStyle="Normal" FontSize="16" Click="btnRegister_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
                         <RotateTransform/>
-                        <TranslateTransform Y="-3.5"/>
+                        <TranslateTransform Y="-4" X="-10"/>
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
