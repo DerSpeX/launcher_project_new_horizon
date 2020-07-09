@@ -28,14 +28,14 @@
 
 
             <StackPanel>
-                <Button Margin="750,10,10,0" Width="30" Height="30" Content="X" x:Name="btnExit" Click="btnExit_Click" Opacity="0.75"/>
+                <Button Margin="850,10,10,0" Width="30" Height="30" Content="X" x:Name="btnExit" Click="btnExit_Click" Opacity="0.75"/>
             </StackPanel>
 
 
 
             <StackPanel VerticalAlignment="Top">
                 <TextBlock Text="Project:"
-                           FontWeight="Regular"
+                           FontWeight="Bold"
                            FontFamily="ChopinScript Mittel"
                            FontSize="35"
                            Foreground="#ecae60"
@@ -57,7 +57,7 @@
 
             <StackPanel VerticalAlignment="Center">
                 <TextBlock Text="New Horizon"
-                           FontWeight="Regular"
+                           FontWeight="Bold"
                            FontFamily="ChopinScript Mittel"
                            FontSize="35"
                            Foreground="#ecae60"
@@ -77,21 +77,63 @@
             </StackPanel>
 
 
-            <StackPanel VerticalAlignment="Bottom">
+            <StackPanel VerticalAlignment="Bottom" Margin="0,0">
 
-                <Canvas Height="5" Background="#242424">
+                <Canvas Height="5" Background="#242424" >
                     <Line X1="0" Y1="0" X2="900" Y2="0" Stroke="#ecae60" StrokeThickness="4">
 
                     </Line>
                 </Canvas>
             </StackPanel>
 
+            <StackPanel>
+                <TextBox x:Name="txtHeader"
+                         FontFamily="ChopinScript Mittel"
+                         FontWeight="Light"
+                         FontStyle="Italic"
+                         FontSize="35"
+                         Text="Registrierung:"
+                         Width="180"
+                         Height="45"
+                         Background="Transparent"
+                         Foreground="White" 
+                         BorderThickness="0"
+                         RenderTransformOrigin="0.5,0.5">
+                    <TextBox.Effect>
+                        <DropShadowEffect ShadowDepth="4" Direction="330" Color="Black" BlurRadius="4" Opacity="1"/>
+                    </TextBox.Effect>
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="2.045"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="122.5" X="-350"/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+            </StackPanel>
 
-            <StackPanel Grid.Row="1" Margin="20,20" Orientation="Horizontal">
+            <StackPanel Grid.Row="1" Margin="20,40" Orientation="Horizontal">
+
+                <StackPanel VerticalAlignment="Top" Margin="0,0">
+
+                    <Canvas>
+                        <Line X1="0" Y1="0" X2="900" Y2="0" Stroke="#ecae60" StrokeThickness="4" Canvas.Left="-15" Canvas.Top="10">
+
+                        </Line>
+                    </Canvas>
+                </StackPanel>
 
 
+                <StackPanel VerticalAlignment="Bottom" Margin="0,0">
 
-                <DockPanel Width="253" Height="285" HorizontalAlignment="Left">
+                    <Canvas>
+                        <Line X1="0" Y1="0" X2="900" Y2="0" Stroke="#ecae60" StrokeThickness="4" Canvas.Left="-20" Canvas.Top="10"/>
+                    </Canvas>
+                </StackPanel>
+
+
+                <DockPanel Width="253" Height="270" HorizontalAlignment="Left">
                     <StackPanel>
                         <StackPanel Margin="0,30">
                             <TextBox x:Name="txtForname"
@@ -191,7 +233,7 @@
                 </DockPanel>
 
 
-                <DockPanel Width="253" Height="285" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                <DockPanel Width="253" Height="270" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
                     <DockPanel.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -298,7 +340,7 @@
                     </StackPanel>
                 </DockPanel>
 
-                <DockPanel Width="253" Height="285" RenderTransformOrigin="0.5,0.5">
+                <DockPanel Width="253" Height="270" RenderTransformOrigin="0.5,0.5">
                     <DockPanel.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -402,6 +444,59 @@
                 </DockPanel>
 
             </StackPanel>
+
+            <Button x:Name="btnRegister"
+                    Content="Registrieren"
+                    Height="40" Margin="755,7,10,328" Grid.Row="1" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontStyle="Normal" FontSize="16">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-3.5"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+
+
+
+            <StackPanel>
+                <Button Margin="-850,10,10,0" Width="25" Height="25" x:Name="btnMusicPlay" Click="btnMusicPlay_Click" Opacity="0.5">
+                    <Image Source="play_Button.png" Width="14" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-3.5041414214731503E-15"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.5"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Margin="-790,10,10,0" Width="25" Height="25" x:Name="btnMusicPause" Click="btnMusicPause_Click" Opacity="0.5">
+                    <Image Source="pause_Button.png" Width="14" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-3.5041414214731503E-15"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.3"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Margin="-730,10,10,0" Width="25" Height="25" x:Name="btnMusicMute" Opacity="0.5" Click="btnMusicMute_Click">
+                    <Image Source="stop_Button.png" Width="10"/>
+                </Button>
+            </StackPanel>
+
+
 
         </Grid>
 

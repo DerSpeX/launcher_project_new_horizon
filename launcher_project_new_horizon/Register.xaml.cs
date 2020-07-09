@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Media;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+
 
 namespace launcher_project_new_horizon
 {
@@ -30,6 +32,33 @@ namespace launcher_project_new_horizon
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void btnMusicPlay_Click(object sender, RoutedEventArgs e)
+        {
+            SoundPlayer sp = new SoundPlayer();
+            sp.SoundLocation = @".\GTAIVTHEME.wav";
+            sp.PlayLooping();
+        }
+
+
+        private void btnMusicMute_Click(object sender, RoutedEventArgs e)
+        {
+            SoundPlayer sp = new SoundPlayer();
+            sp.SoundLocation = @".\GTAIVTHEME.wav";
+            sp.Stop();
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            Register objRegister = new Register();
+            this.Visibility = Visibility.Hidden;
+            objRegister.Show();
+        }
+
+        private void btnMusicPause_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
