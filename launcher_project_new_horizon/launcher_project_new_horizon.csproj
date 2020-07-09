@@ -4,17 +4,43 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\MDeS_SpeX (Florian)\Desktop\output\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="GTAIVTHEME.wav" />
+    <None Remove="hiclipart.com.png" />
     <None Remove="lockicon.png" />
+    <None Remove="pause_Button.png" />
+    <None Remove="pause_white.png" />
+    <None Remove="play_Button.png" />
     <None Remove="Siegel_von_Los_Santos.png" />
+    <None Remove="stop_Button.png" />
     <None Remove="usernameicon.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="GTAIVTHEME.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="hiclipart.com.png" />
     <Resource Include="lockicon.png" />
+    <Resource Include="pause_Button.png" />
+    <Resource Include="pause_white.png" />
+    <Resource Include="play_Button.png" />
     <Resource Include="Siegel_von_Los_Santos.png" />
+    <Resource Include="stop_Button.png" />
     <Resource Include="usernameicon.png" />
   </ItemGroup>
 

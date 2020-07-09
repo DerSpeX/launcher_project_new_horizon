@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:launcher_project_new_horizon"
         mc:Ignorable="d"
-        Title="MainWindow" ShowInTaskbar="True" Height="450" Width="380" 
+        Title="P:NH Login" ShowInTaskbar="True" Height="450" Width="380"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
-        MouseDown="MainWindow_OnMouseDown">
+        MouseDown="MainWindow_OnMouseDown"
+        >
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -31,21 +32,21 @@
                 <Image Source="Siegel_von_Los_Santos.png" Width="150" Height="150" Margin="5"/>
                 <TextBlock Text="Project: New Horizon"
                            FontWeight="Regular"
-                           FontFamily="Helvetica"
-                           FontSize="25"
-                           Foreground="White"
+                           FontFamily="ChopinScript Mittel"
+                           FontSize="32"
+                           Foreground="#ecae60"
                            HorizontalAlignment="Center"
                            Margin="5">
                     <TextBlock.Effect>
-                        <DropShadowEffect ShadowDepth="4" Direction="330" Color="Black" BlurRadius="4" Opacity="0.5"/>
+                        <DropShadowEffect ShadowDepth="4" Direction="330" Color="Black" BlurRadius="4" Opacity="1"/>
                     </TextBlock.Effect>
                 </TextBlock>
             </StackPanel>
 
 
-            <StackPanel Grid.Row="1" Margin="0,0,0,0">
+            <StackPanel Grid.Row="1" Margin="0,-20,0,0">
                 <StackPanel Orientation="Horizontal" Margin="0,40,0,0">
-                    <TextBox FontFamily="Helvetica"
+                    <TextBox x:Name="txtUsername" FontFamily="Helvetica"
                          FontWeight="Light"
                          FontSize="20"
                          Text="Benutzername"
@@ -86,7 +87,7 @@
                         </TransformGroup>
                     </Image.RenderTransform>
                 </Image>
-                <PasswordBox FontFamily="Helvetica"
+                <PasswordBox x:Name="txtPassword" FontFamily="Helvetica"
                          FontWeight="Light"
                          FontSize="20"
                          Password="Password"
@@ -114,14 +115,51 @@
                         Opacity="0.75"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,40,0,0">
-                    <Button Width="100" Height="40" Content="Anmelden" Margin="60,0,60,0" x:Name="btnLogin" Click="BtnLogin_Click"/>
-                    <Button Width="100" Height="40" Content="Registrieren"/>
+                    <Button Width="100" Height="40" Content="Anmelden" Margin="60,0,60,0" Opacity="0.75" x:Name="btnLogin" Click="BtnLogin_Click"/>
+                    <Button x:Name="btnRegister" Width="100" Height="40" Content="Registrieren" Opacity="0.75" Click="btnRegister_Click"/>
                 </StackPanel>
             </StackPanel>
 
             <StackPanel>
-                <Button Margin="340,10,10,0" Width="30" Height="30" Content="X" x:Name="btnExit" Click="BtnExit_Click"/>
+                <Button Margin="340,10,10,0" Width="30" Height="30" Content="X" x:Name="btnExit" Click="BtnExit_Click" Opacity="0.75"/>
             </StackPanel>
+
+            <StackPanel>
+                <Button Margin="-320,10,10,0" Width="25" Height="25" x:Name="btnMusicPlay" Click="btnMusicPlay_Click" Opacity="0.5">
+                    <Image Source="play_Button.png" Width="14" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-3.5041414214731503E-15"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.5"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Margin="-265,10,10,0" Width="25" Height="25" x:Name="btnMusicPause" Click="btnMusicPause_Click" Opacity="0.5">
+                    <Image Source="pause_Button.png" Width="14" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-3.5041414214731503E-15"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="0.3"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+            </StackPanel>
+
+            <StackPanel>
+                <Button Margin="-210,10,10,0" Width="25" Height="25" x:Name="btnMusicMute" Opacity="0.5" Click="btnMusicMute_Click">
+                    <Image Source="stop_Button.png" Width="10"/>
+                </Button>
+            </StackPanel>
+            
             
         </Grid>
     </Grid>

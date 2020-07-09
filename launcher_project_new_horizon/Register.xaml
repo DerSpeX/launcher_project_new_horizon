@@ -1,0 +1,183 @@
+﻿<Window x:Class="launcher_project_new_horizon.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:launcher_project_new_horizon"
+        mc:Ignorable="d"
+        Title="Register" Height="450" Width="800" ShowInTaskbar="True"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize"
+        MouseDown="RegisterWindow_OnMouseDown">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="125"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#2f4f4f" Offset="0.0"/>
+                        <GradientStop Color="#3b3b3b" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+
+            <StackPanel>
+                <Button Margin="750,10,10,0" Width="30" Height="30" Content="X" x:Name="btnExit" Click="btnExit_Click" Opacity="0.75"/>
+            </StackPanel>
+
+
+
+            <StackPanel VerticalAlignment="Top">
+                <TextBlock Text="Project:"
+                           FontWeight="Regular"
+                           FontFamily="ChopinScript Mittel"
+                           FontSize="35"
+                           Foreground="#ecae60"
+                           HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-3.5041414214731503E-15"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-45" Y="15"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                    <TextBlock.Effect>
+                        <DropShadowEffect ShadowDepth="4" Direction="300" Color="Black" BlurRadius="4" Opacity="1"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </StackPanel>
+
+
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="New Horizon"
+                           FontWeight="Regular"
+                           FontFamily="ChopinScript Mittel"
+                           FontSize="35"
+                           Foreground="#ecae60"
+                           HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-3.5041414214731503E-15"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="11.5" X="40"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                    <TextBlock.Effect>
+                        <DropShadowEffect ShadowDepth="4" Direction="300" Color="Black" BlurRadius="4" Opacity="1"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </StackPanel>
+
+
+            <StackPanel VerticalAlignment="Bottom">
+
+                <Canvas Height="5" Background="#242424">
+                    <Line X1="0" Y1="0" X2="800" Y2="0" Stroke="#ecae60" StrokeThickness="4">
+
+                    </Line>
+                </Canvas>
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="1" Margin="20,0,20,0">
+                <StackPanel Orientation="Horizontal" Margin="0,40,0,0">
+                    <TextBlock x:Name="txtForname"
+                                FontFamily="Helvetica"
+                                FontWeight="Regular"
+                                FontSize="20"
+                                Text="Vorname"
+                                HorizontalAlignment="Left"
+                                
+                                Foreground="White"
+                                Background="Transparent"
+                                Opacity="0.75"
+                                Height="25" RenderTransformOrigin="0.5,0.5">
+ 
+                    </TextBlock>
+                </StackPanel>
+                <Border Width="220"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.75"   
+                        HorizontalAlignment="Left"/>
+
+
+                <StackPanel Orientation="Vertical" Margin="0,40,0,0">
+                    <TextBlock x:Name="txtUsername"
+                                FontFamily="Helvetica"
+                                FontWeight="Regular"
+                                FontSize="20"
+                                Text="Benutzname"
+                                HorizontalAlignment="Left"
+                                Foreground="White"
+                                Background="Transparent"
+                                Opacity="0.75"
+                                Height="25"/>
+                </StackPanel>
+                <Border Width="220"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.75"   
+                        HorizontalAlignment="Left"/>
+
+
+                <StackPanel Orientation="Vertical" Margin="0,40,0,0">
+                    <TextBlock x:Name="txtCharactername"
+                                FontFamily="Helvetica"
+                                FontWeight="Regular"
+                                FontSize="20"
+                                Text="Charaktername"
+                                HorizontalAlignment="Left"
+                                Foreground="White"
+                                Background="Transparent"
+                                Opacity="0.75"
+                                Height="25"/>
+                </StackPanel>
+                <Border Width="220"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.75"   
+                        HorizontalAlignment="Left"/>
+
+
+                <StackPanel Orientation="Vertical" Margin="0,40,0,0">
+                    <TextBlock x:Name="txtEmailAddress"
+                                FontFamily="Helvetica"
+                                FontWeight="Regular"
+                                FontSize="20"
+                                Text="E-Mail Adresse"
+                                TextAlignment="Left"
+                                HorizontalAlignment="Left"
+                                Foreground="White"
+                                Background="Transparent"
+                                Opacity="0.75"
+                                Height="25"/>
+                </StackPanel>
+                <Border Width="220"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.75"   
+                        HorizontalAlignment="Left"/>
+
+
+
+
+
+
+
+
+            </StackPanel>
+
+
+        </Grid>
+        
+    </Grid>
+</Window>
