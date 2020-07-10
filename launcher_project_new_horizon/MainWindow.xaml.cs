@@ -59,11 +59,15 @@ namespace launcher_project_new_horizon
             if (VerifyUser(txtUsername.Text, txtPassword.Password))
             {
                 MessageBox.Show("Weiterleitung erfolgt...", "Anmeldung Erfolgreich", MessageBoxButton.OK, MessageBoxImage.Information);
+                Launcher objLauncher = new Launcher();
+                this.Visibility = Visibility.Hidden;
+                objLauncher.Show();
             }
             else
             {
                 MessageBox.Show("Benutzername oder Passwort ist falsch. Korrigiere deine Eingabe!", "Anmeldung Fehlgeschlagen", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
         }
 
         private bool VerifyUser(string username, string password)
@@ -117,9 +121,5 @@ namespace launcher_project_new_horizon
             objRegister.Show();
         }
 
-        private void btnMusicPause_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

@@ -9,7 +9,7 @@
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="MainWindow_OnMouseDown"
-        >
+        > 
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -140,7 +140,7 @@
             </StackPanel>
 
             <StackPanel>
-                <Button Margin="-265,10,10,0" Width="25" Height="25" x:Name="btnMusicPause" Click="btnMusicPause_Click" Opacity="0.5">
+                <Button Margin="-265,10,10,0" Width="25" Height="25" x:Name="btnMusicPause" Opacity="0.5">
                     <Image Source="pause_Button.png" Width="14" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
