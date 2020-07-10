@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data.Sql;
 using System.Configuration;
-
+using System.Data;
 
 namespace launcher_project_new_horizon
 {
@@ -63,28 +63,34 @@ namespace launcher_project_new_horizon
         // {
         // }
 
+
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-            string Forname = Convert.ToString(txtForname);
+
+            string Forname = txtForname.Text;
+            string Username = txtUsername.Text;
+            string Password = txtPassword.Password;
             SqlConnection con = new SqlConnection();
             SqlCommand com = new SqlCommand();
 
             con.ConnectionString = ConfigurationManager.ConnectionStrings["WPF"].ConnectionString.ToString();
-
-            
-
-            com.CommandType = System.Data.CommandType.Text;
-            com.CommandText = "INSERT Users (Forname) VALUES ('Forname')";
-            com.Connection = con;
-
             con.Open();
+
+
+            com.Parameters.AddWithValue("@Forname", Forname);
+            com.Parameters.AddWithValue("@Username", Username);
+            com.Parameters.AddWithValue("@Password", Password);
+            com.Connection = con;
+            com.CommandText = "INSERT Users (Forname , Username , Password) VALUES (@Forname , @Username , @Password)";
             com.ExecuteNonQuery();
             con.Close();
 
-            Console.WriteLine();
+            Application.Current.Shutdown();
 
-        }
 
+
+        }   
+       
 
     }
 }
