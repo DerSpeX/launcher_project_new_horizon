@@ -81,7 +81,7 @@ namespace launcher_project_new_horizon
             com.ExecuteNonQuery();
             con.Close();
 
-
+            Console.WriteLine();
 
         }
 
